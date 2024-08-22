@@ -6,8 +6,8 @@ import Main from '../layouts/Main';
 const Index = () => (
   <Main
     description={
-      "Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-      + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
+      "Nero's personal website. KNUST graduate, "
+      + 'Computer Architect and Philosopher who creates truce between electrons artistically.'
     }
   >
     <article className="post" id="index">
@@ -18,7 +18,7 @@ const Index = () => (
           </h2>
           <p>
             A beautiful, responsive, statically-generated, react application
-            written with modern Javascript.
+            written with modern Javascript. Adapted from <a href="https://github.com/mldangelo/personal-site">Michael D&apos;Angelo&apos;s</a> work
           </p>
         </div>
       </header>

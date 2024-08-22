@@ -12,9 +12,9 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
+        <h2>Nero Kofi Etornam NOVOR</h2>
         <p>
-          <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
+          <a href="mailto:sessitornam@gmail.com">sessitornam@gmail.com</a>
         </p>
       </header>
     </section>
@@ -22,14 +22,11 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Michael. I am a{' '}
-        <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC
-        Alumni, and the VP of Engineering at{' '}
-        <a href="https://smileidentity.com">Smile Identity</a>. Previously, I
-        was the co-founder and CTO of <a href="https://arthena.com">Arthena</a>,
-        co-founder of <a href="https://matroid.com">Matroid</a>, and worked at{' '}
-        <a href="https://planet.com">Planet</a> and{' '}
-        <a href="https://facebook.com">Facebook</a>.
+        Hello there, Nero here. I am a{' '}
+        <a href="https://www.knust.edu.gh/">KNUST</a> graduate, and currently a Teaching and Research Assistant under{' '}
+        <a href="https://webapps.knust.edu.gh/staff/dirsearch/profile/areas-of-interest/3852d7e475d8.html">Prof. K. O. Boateng</a> , at the department of{' '}
+        <a href="https://compeng.knust.edu.gh/undergraduate/bsc-computer-engineering">Computer Engineering</a>{' '}<a href="https://www.knust.edu.gh/">KNUST</a>. 
+        I apreciate the fundamentals, the genesis, the building blocks of things. Specifically, I am interested in the field of{' '} <a href="https://en.wikipedia.org/wiki/Computer_architecture">Computer Architecture</a>, a domain which nicely blends simplicity into complexities! I get to express{' '}<a href="https://en.wikipedia.org/wiki/STEAM_education">STEAM</a>!
       </p>
       <ul className="actions">
         <li>
@@ -49,7 +46,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.
+        &copy; Nero Novor <Link to="/">etorkay.github.io</Link>.
       </p>
     </section>
   </section>
