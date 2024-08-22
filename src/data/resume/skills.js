@@ -1,229 +1,127 @@
 const skills = [
+
+  //Languages
   {
-    title: 'Javascript',
-    competency: 4,
-    category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'Node.JS',
-    competency: 5,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'React',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Next.JS',
+    title: 'C',
     competency: 3,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Bash',
-    competency: 2,
-    category: ['Tools', 'Languages'],
-  },
-  {
-    title: 'Amazon Web Services',
-    competency: 4,
-    category: ['Web Development', 'Tools'],
-  },
-  {
-    title: 'Heroku',
-    competency: 2,
-    category: ['Web Development', 'Tools'],
-  },
-  {
-    title: 'MongoDB',
-    competency: 3,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'ElasticSearch',
-    competency: 2,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'PostgreSQL/SQLite3/SQL/Redshift',
-    competency: 4,
-    category: ['Web Development', 'Databases', 'Languages'],
-  },
-  {
-    title: 'Redis',
-    competency: 3,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'Data Mining',
-    competency: 3,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'Express.JS',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'D3',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Flask',
-    competency: 3,
-    category: ['Web Development', 'Python'],
-  },
-  {
-    title: 'FastAPI',
-    competency: 3,
-    category: ['Web Development', 'Python'],
-  },
-  {
-    title: 'Git/Mercurial',
-    competency: 3,
-    category: ['Tools'],
-  },
-  {
-    title: 'Kubernetes',
-    competency: 2,
-    category: ['Tools', 'Data Engineering'],
-  },
-  {
-    title: 'Google Cloud Compute',
-    competency: 2,
-    category: ['Tools', 'Web Development'],
-  },
-  {
-    title: 'AWS',
-    competency: 3,
-    category: ['Tools', 'Web Development'],
-  },
-  {
-    title: 'Docker',
-    competency: 3,
-    category: ['Tools', 'Data Engineering'],
-  },
-  {
-    title: 'AWS Lambda',
-    competency: 3,
-    category: ['Tools', 'Web Development'],
-  },
-  {
-    title: 'Numpy',
-    competency: 3,
-    category: ['Data Science', 'Data Engineering', 'Python', 'ML Engineering'],
-  },
-  {
-    title: 'Numba',
-    competency: 2,
-    category: ['Data Science', 'Data Engineering', 'Python'],
-  },
-  {
-    title: 'Tensorflow + Keras',
-    competency: 3,
-    category: ['ML Engineering', 'Python'],
-  },
-  {
-    title: 'PyTorch',
-    competency: 3,
-    category: ['ML Engineering', 'Python'],
-  },
-  {
-    title: 'Jupyter',
-    competency: 3,
-    category: ['Data Science', 'Python'],
-  },
-  {
-    title: 'Typescript',
-    competency: 3,
-    category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'HTML + SASS/SCSS/CSS',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
-  },
-  {
-    title: 'Python',
-    competency: 5,
-    category: ['Languages', 'Python', 'ML Engineering'],
-  },
-  {
-    title: 'Ruby',
-    competency: 2,
     category: ['Languages'],
-  },
-  {
-    title: 'Ruby on Rails',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
   },
   {
     title: 'C++',
-    competency: 1,
-    category: ['Languages'],
-  },
-  {
-    title: 'Julia',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'MATLAB',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'R',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'Data Visualization',
     competency: 3,
-    category: ['Data Science', 'Javascript'],
+    category: ['Languages'],
   },
   {
-    title: 'GraphQL',
-    competency: 2,
-    category: ['Web Development', 'Databases'],
+    title: 'Java',
+    competency: 3,
+    category: ['Languages'],
   },
   {
-    title: 'Pandas',
+    title: 'Vala',
+    competency: 3,
+    category: ['Languages'],
+  },
+  {
+    title: 'Rust',
+    competency: 4,
+    category: ['Languages'],
+  },
+  {
+    title: 'Matlab',
+    competency: 3,
+    category: ['Languages'],
+  },
+  {
+    title: 'Cmake',
+    competency: 3,
+    category: ['Languages', 'Tools'],
+  },
+
+
+  //Scripting Languages
+  {
+    title: 'Bash',
+    competency: 3,
+    category: ['Tools', 'Languages'],
+  },
+  {
+    title: 'Perl',
+    competency: 3,
+    category: ['Tools', 'Languages'],
+  },
+
+  //Simulators and Assemblers
+  {
+    title: 'MARS',
+    competency: 4,
+    category: ['Tools', 'Simulators'],
+  },
+  {
+    title: 'MASM',
+    competency: 4,
+    category: ['Tools', 'Simulators'],
+  },
+  
+
+  // Hardware Description Languages
+  {
+    title: 'VHDL',
     competency: 5,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
+    category: ['Languages', 'HDLs'],
   },
   {
-    title: 'Matplotlib',
+    title: 'Verilog',
     competency: 3,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
+    category: ['Languages', 'HDLs'],
   },
   {
-    title: 'Scikit-Learn',
-    competency: 4,
-    category: ['Data Engineering', 'ML Engineering', 'Python'],
-  },
-  {
-    title: 'Spark',
-    competency: 2,
-    category: ['Data Engineering', 'ML Engineering'],
-  },
-  {
-    title: 'Dagster',
-    competency: 2,
-    category: ['Data Engineering', 'Python', 'ML Engineering'],
-  },
-  {
-    title: 'Mypy',
+    title: 'SystemVerilog',
     competency: 3,
-    category: ['Python'],
+    category: ['Languages', 'HDLs'],
+  },
+
+  //EDA Tools
+  {
+    title: 'Xilinx ISE',
+    competency: 5,
+    category: ['Tools', 'EDA'],
   },
   {
-    title: 'Pylint',
-    competency: 4,
-    category: ['Data Engineering', 'Python'],
+    title: 'Xilinx Vivado',
+    competency: 5,
+    category: ['Tools', 'EDA'],
   },
+  {
+    title: 'Candance Virtuoso',
+    competency: 4,
+    category: ['Tools', 'EDA'],
+  },
+  {
+    title: 'Matlab',
+    competency: 3,
+    category: ['Tools', 'EDA'],
+  },
+  
+  //ISA and Architecture
+  {
+    title: 'MIPS',
+    competency: 4,
+    category: ['ISA', 'Assembly'],
+  },
+  {
+    title: 'RISC-V',
+    competency: 2,
+    category: ['ISA', 'Assembly'],
+  },
+  {
+    title: 'ARM',
+    competency: 2,
+    category: ['ISA', 'Assembly'],
+  },
+
+  //Operating Systems
+
+
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
 // this is a list of colors that I like. The length should be === to the

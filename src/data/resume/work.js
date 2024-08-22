@@ -13,10 +13,10 @@
  */
 const work = [
   {
-    name: 'Smile Identity',
-    position: 'VP Engineering & Head of AI',
-    url: 'https://smileidentity.com',
-    startDate: '2022-01-01',
+    name: 'Department of Computer Engineering, KNUST',
+    position: 'Research Assistant',
+    url: 'https://compeng.knust.edu.gh/',
+    startDate: '2023-09-01',
     summary: `Smile builds machine learning APIs to compare user submitted photos to ID documents. Our APIs are
     used by hundreds of thousands of people every day to access financial services. As VP of Engineering,
     I provide technical leadership on high-impact projects, influence and coach a distributed team of engineers,
