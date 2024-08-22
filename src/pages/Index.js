@@ -32,8 +32,8 @@ const Index = () => (
       </p>
       <p>
         {' '}
-        Source available{' '}
-        <a href="https://github.com/mldangelo/personal-site">here</a>.
+        And oh, you do check out my shots on Instagram{' '}
+        <a href="https://www.instagram.com/sessi.tor/">here</a>.
       </p>
     </article>
   </Main>

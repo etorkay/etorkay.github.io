@@ -15,7 +15,6 @@
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build && react-snap",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "npx jest"
   },

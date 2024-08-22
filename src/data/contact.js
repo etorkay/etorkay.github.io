@@ -40,7 +40,7 @@ const data = [
   //   icon: faTwitter,
   // },
   {
-    link: 'mailto:site.sessitornam@gmail.com',
+    link: 'mailto:site.sessitornam+site@gmail.com',
     label: 'Email',
     icon: faEnvelope,
   },
