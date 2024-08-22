@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunketorkay_github_io=self.webpackChunketorkay_github_io||[]).push([[625],{625:(e,t,a)=>{e.exports=a.p+"static/media/about.0536559ed5fb1d49068d.md"}}]);

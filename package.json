@@ -1,7 +1,7 @@
 {
   "name": "etorkay.github.io",
   "version": "4.0.0",
-  "homepage": "https://etorkay.github.io",
+  "homepage": "https://etorkay.github.io/etorkay.github.io",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build && react-snap",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "npx jest"
   },
