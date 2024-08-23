@@ -17,7 +17,7 @@ const work = [
     position: 'Research Assistant',
     url: 'https://compeng.knust.edu.gh/',
     startDate: '2023-09-01',
-    summary: `Summrary`,
+    summary: ``,
     highlights: [
       'Implemented digital designs to specification in VHDL and Verilog for FPGA and ASIC implementation.',
       'Conducted research into Residual Number System single cycle Forward and Backward conversion.',
@@ -57,7 +57,7 @@ const work = [
     url: 'https://compeng.knust.edu.gh/',
     startDate: '2022-09-01',
     endDate: '2022-12-01',
-    summary: `Summary`,
+    summary: ``,
     highlights: [
       'Designed and implemented 8 and 16‑bit dedicated processors in VHDL.',
       'Implemented DES cipher on an FPGA and verified Design',
@@ -68,10 +68,10 @@ const work = [
   {
     name: 'FOCUS FM, KNUST',
     position: 'Volunteer',
-    url: 'http://enveritas.org',
-    startDate: '2016-09-01',
-    endDate: '2018-01-01',
-    summary: `Summary`,
+    url: 'https://focusfmknust.com/',
+    startDate: '2022-01-01',
+    endDate: '2022-11-01',
+    summary: ``,
     highlights: [
       'Provided technical support, servicing computers and IT tools',
       'Produced the Teknokrat show live on air and Facebook',
@@ -82,7 +82,7 @@ const work = [
   {
     name: 'JJJ Woolley International School, Accra',
     position: 'Pupil Teacher',
-    url: 'https://zenysis.com',
+    url: '',
     startDate: '2018-09-01',
     endDate: '2019-07-01',
     summary: ``,
