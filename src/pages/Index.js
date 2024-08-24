@@ -14,7 +14,7 @@ const Index = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/">About this site</Link>
+            <Link to="/">Welcome to My Digital Hub</Link>
           </h2>
           <p>
             A beautiful, responsive, statically-generated, react application
@@ -24,15 +24,12 @@ const Index = () => (
       </header>
       <p>
         {' '}
-        Welcome to my website. Please feel free to read more{' '}
-        <Link to="/about">about me</Link>, or you can check out my{' '}
-        <Link to="/resume">resume</Link>, <Link to="/projects">projects</Link>,{' '}
-        view <Link to="/stats">site statistics</Link>, or{' '}
-        <Link to="/contact">contact</Link> me.
+        Dive into my journey as I navigate the intersection of technology and creativity. Explore my resume, projects, and feel free to reach out to <Link to="/contact">me</Link>. 
+        
       </p>
       <p>
         {' '}
-        And oh, you do check out my shots on Instagram{' '}
+        Whether you're here to learn more about me or just browsing through, there's something for everyone. And don't miss out on my latest visual captures—check out my shots on Instagram{' '}
         <a href="https://www.instagram.com/sessi.tor/">here</a>.
       </p>
     </article>
