@@ -2,7 +2,7 @@
 const data = [
   {
     title: 'Forward Converter for a Residual Number System (RNS) based on the moduli set (2𝑁 − 1, 2𝑁 , 2𝑁 + 1)',
-    subtitle: '',
+    subtitle: 'dreams on a potato powered web server. (That’s right, I said potato powered)',
     image: '',
     date: '2015-11-20',
     desc:
@@ -14,7 +14,7 @@ const data = [
   {
     title: 'Single Cycle RNS Forward and Backward Converter for moduli set (2𝑁 − 1, 2𝑁 , 2𝑁 + 1)',
     subtitle: '',
-    link: '',
+    link: 'googe.com',
     image: '',
     date: '2015-09-20',
     desc:
@@ -80,7 +80,7 @@ const data = [
     date: '2015-05-15',
     desc:
       'Contributed to a Telegram Bot for finding English word definitions written using Python\n' +
-      'Paired programmed with a colleague to fix critical bugs\n',
+      'Paired programmed with a colleague to fix critical bugs.',
   },
   {
     title: 'Android App to Report Issues on KNUST Campus',
@@ -88,7 +88,7 @@ const data = [
     image: '',
     date: '2015-05-15',
     desc:
-      'Contributed to a Telegram Bot for finding English word definitions written using  Led a team of developers to build an Androidapp using Flutter Framework and NodeJs\n' +
+      'Led a team of developers to build an Androidapp using Flutter Framework and NodeJs\n' +
       'The app was for reporting issue tickets to relevant authorities and bodies to resolve the issues',
   },
 
