@@ -2,6 +2,79 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
+
+const Cell = ({ data }) => (
+  <div className="cell-container">
+    <article className="mini-post">
+      <header>
+        <h3>
+          <a href={data.link}>{data.title}</a>
+        </h3>
+        <time className="published">
+          {dayjs(data.start_date).format('MMMM, YYYY')} {' '}-{' '}
+          {dayjs(data.end_date).format('MMMM, YYYY')}
+        </time>
+      </header>
+      {data.image && (
+        <a href={data.link} className="image">
+          <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
+        </a>
+      )}
+      <div className="description">
+        <ul>
+          {data.desc.split('\n').map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </article>
+  </div>
+);
+
+
+
+Cell.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    link: PropTypes.string,
+    image: PropTypes.string,
+    start_date: PropTypes.string.isRequired,
+    end_date: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default Cell;
+
+
+
+
+
+
+
+
+
+// const Cell = ({ data }) => (
+//   <div className="cell-container">
+//     <article className="mini-post">
+//       <header>
+//         <h3>
+//           <a href={data.link}>{data.title}</a>
+//         </h3>
+//         <time className="published">
+//           {dayjs(data.date).format('MMMM, YYYY')}
+//         </time>
+//       </header>
+//       <a href={data.link} className="image">
+//         <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
+//       </a>
+//       <div className="description">
+//         <p>{data.desc}</p>
+//       </div>
+//     </article>
+//   </div>
+// );
+
 // const Cell = ({ data }) => (
 //   <div className="cell-container" style={{ marginBottom: '20px', width: '100%', height: 'flex' }}>
 //     <article className="mini-post" style={{ padding: '15px', boxSizing: 'border-box', backgroundColor: '#f8f8f8', borderRadius: '8px' }}>
@@ -51,76 +124,6 @@ import dayjs from 'dayjs';
 //             <li key={index} style={{}}>{item}</li>
 //           ))}
 //         </ul>
-//       </div>
-//     </article>
-//   </div>
-// );
-
-const Cell = ({ data }) => (
-  <div className="cell-container">
-    <article className="mini-post">
-      <header>
-        <h3>
-          <a href={data.link}>{data.title}</a>
-        </h3>
-        <time className="published">
-          {dayjs(data.date).format('MMMM, YYYY')}
-        </time>
-      </header>
-      {data.image && (
-        <a href={data.link} className="image">
-          <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
-        </a>
-      )}
-      <div className="description">
-        <ul>
-          {data.desc.split('\n').map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>
-    </article>
-  </div>
-);
-
-
-
-Cell.propTypes = {
-  data: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    link: PropTypes.string,
-    image: PropTypes.string,
-    date: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-export default Cell;
-
-
-
-
-
-
-
-
-
-// const Cell = ({ data }) => (
-//   <div className="cell-container">
-//     <article className="mini-post">
-//       <header>
-//         <h3>
-//           <a href={data.link}>{data.title}</a>
-//         </h3>
-//         <time className="published">
-//           {dayjs(data.date).format('MMMM, YYYY')}
-//         </time>
-//       </header>
-//       <a href={data.link} className="image">
-//         <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
-//       </a>
-//       <div className="description">
-//         <p>{data.desc}</p>
 //       </div>
 //     </article>
 //   </div>

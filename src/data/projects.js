@@ -4,7 +4,8 @@ const data = [
     title: 'Forward Converter for a Residual Number System (RNS) based on the moduli set (2𝑁 − 1, 2𝑁 , 2𝑁 + 1)',
     subtitle: 'dreams on a potato powered web server. (That’s right, I said potato powered)',
     image: '',
-    date: '2015-11-20',
+    start_date: '2023-01-20',
+    end_date: '2023-09-20',
     desc:
       'Created algorithm to exploit bit representation to perform memoryless forward conversion to RNS domain\n'
       + 'Implemented generic forward convertor in VHDL, adaptable to moduli set (2𝑁 − 1, 2𝑁, 2𝑁 + 1) where N is greater than 1\n'
@@ -14,19 +15,19 @@ const data = [
   {
     title: 'Single Cycle RNS Forward and Backward Converter for moduli set (2𝑁 − 1, 2𝑁 , 2𝑁 + 1)',
     subtitle: '',
-    link: 'googe.com',
     image: '',
-    date: '2015-09-20',
+    start_date: '2023-08-20',
+    end_date: '2023-10-20',
     desc:
       'Implemented design iterations of single cycle generic forward and backward converter for the moduli set (2𝑁 − 1, 2𝑁, 2𝑁 + 1)\n' +
       'Designed programs to test output and verify the output to the system',
   },
   {
     title: 'DES encryption and decryption tool implemented on FPGA',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: '',
+    subtitle: '',
     image: '',
-    date: '2015-06-28',
+    start_date: '2022-08-20',
+    end_date: '2022-12-20',
     desc:
       'Implemented Data Encryption Standard (DES) and Presented Cipher in a digital circuit design\n'+
       'Implemented digital designs in VHDL, simulated and verified design in Xilinx ISE\n'+
@@ -36,7 +37,8 @@ const data = [
     title: '16‑bit RISC Microprocessor',
     subtitle: '',
     image: '',
-    date: '2015-05-15',
+    start_date: '2022-01-20',
+    end_date: '2022-04-20',
     desc:
       'Designed and tested 16‑bit MIPS microprocessor using Logisim Software\n'+
       'The microprocessor consists of an ALU, a register, a CPU, RAM, and a control unit.\n'+
@@ -46,7 +48,8 @@ const data = [
     title: 'Inverter Design and Layout',
     subtitle: '',
     image: '',
-    date: '2015-05-15',
+    start_date: '2023-05-20',
+    end_date: '2023-09-20',
     desc:
       'Designed an Inverter schematic and its symbol in Cadence Virtuoso using MOSFET types (PMOS and NMOS) in the gpdk180 nm and Analog library.\n' +
       'Generated the layout from the source of the schematic, connected the MOSFETs with the sources just as in the schematic.\n' +
@@ -58,7 +61,8 @@ const data = [
     title: 'Operational Transconductance Amplifier (OTA) Design and Layout',
     subtitle: '',
     image: '',
-    date: '2015-05-15',
+    start_date: '2024-05-20',
+    end_date: '2024-07-20',
     desc:
       'Designed an OTA schematic and its symbol in Cadence Virtuoso using MOSFET types (PMOS and NMOS) in the gpdk180 nm and Analog library.\n' +
       'Designed a three current‑mirror OTA with Cadence &apos;s Virtuoso and Spectre.',
@@ -67,7 +71,8 @@ const data = [
     title: '8‑bit Dedicated Processors',
     subtitle: '',
     image: '',
-    date: '2015-05-15',
+    start_date: '2022-08-20',
+    end_date: '2022-12-20',
     desc:
       'Created a multicycle dedicated processor to perform division, multiplication, and finding even and odd numbers.\n' +
       'Implemented design in VHDL, simulated design on Xilinx ISE\n' +
@@ -77,7 +82,8 @@ const data = [
     title: 'Telegram Bot',
     subtitle: '',
     image: '',
-    date: '2015-05-15',
+    start_date: '2021-03-20',
+    end_date: '2021-07-20',
     desc:
       'Contributed to a Telegram Bot for finding English word definitions written using Python\n' +
       'Paired programmed with a colleague to fix critical bugs.',
@@ -86,10 +92,21 @@ const data = [
     title: 'Android App to Report Issues on KNUST Campus',
     subtitle: '',
     image: '',
-    date: '2015-05-15',
+    start_date: '2022-05-20',
+    end_date: '2022-09-20',
     desc:
       'Led a team of developers to build an Androidapp using Flutter Framework and NodeJs\n' +
       'The app was for reporting issue tickets to relevant authorities and bodies to resolve the issues',
+  },
+  {
+    title: 'App to calculate Reliability of a System',
+    subtitle: '',
+    image: '',
+    start_date: '2023-08-20',
+    end_date: '2023-09-20',
+    desc:
+      'Developed a pyQt‑based GUI app to compute Reliability values of systems\n' +
+      'Implementation was made in python built on PyQt',
   },
 
 ];
