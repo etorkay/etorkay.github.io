@@ -1,26 +1,26 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Forward Converter for a Residual Number System (RNS) based on the moduli set (2𝑁 − 1, 2𝑁 , 2𝑁 + 1)',
-    subtitle: 'dreams on a potato powered web server. (That’s right, I said potato powered)',
+    title: 'Forward Converter for a Residual Number System (RNS) based on the moduli set (2<sup>N</sup> − 1, 2<sup>N</sup>, 2<sup>N</sup> + 1)',
+    subtitle: '',
     image: '',
     start_date: '2023-01-20',
     end_date: '2023-09-20',
     desc:
       'Created algorithm to exploit bit representation to perform memoryless forward conversion to RNS domain\n'
-      + 'Implemented generic forward convertor in VHDL, adaptable to moduli set (2𝑁 − 1, 2𝑁, 2𝑁 + 1) where N is greater than 1\n'
-      + 'Designed programs to test output and verify the output to the system\n'
+      + 'Implemented generic forward convertor in VHDL, adaptable to the moduli set where N is greater than 1\n'
+      + 'Wrote test programs in C++ to test output and verify the output to the system\n'
       + 'Synthesized a demo on Spartan 3 FPGA',
   },
   {
-    title: 'Single Cycle RNS Forward and Backward Converter for moduli set (2𝑁 − 1, 2𝑁 , 2𝑁 + 1)',
+    title: 'Single Cycle RNS Forward and Backward Converter for moduli set (2<sup>N</sup> − 1, 2<sup>N</sup>, 2<sup>N</sup> + 1)',
     subtitle: '',
     image: '',
     start_date: '2023-08-20',
     end_date: '2023-10-20',
     desc:
-      'Implemented design iterations of single cycle generic forward and backward converter for the moduli set (2𝑁 − 1, 2𝑁, 2𝑁 + 1)\n' +
-      'Designed programs to test output and verify the output to the system',
+      'Implemented design iterations of single cycle generic forward and backward converter for the moduli set\n' +
+      'Wrote test programs in C++ to test output and verify the output to the system',
   },
   {
     title: 'DES encryption and decryption tool implemented on FPGA',

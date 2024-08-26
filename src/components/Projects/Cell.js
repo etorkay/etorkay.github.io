@@ -7,15 +7,14 @@ const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
       <header>
-        <h3>
-          <a href={data.link}>{data.title}</a>
-        </h3>
-        <time className="published">
+        <h3 dangerouslySetInnerHTML={{ __html: data.title }}> 
+        </h3> 
+        <time className="published"> 
           {dayjs(data.start_date).format('MMMM, YYYY')} {' '}-{' '}
           {dayjs(data.end_date).format('MMMM, YYYY')}
         </time>
       </header>
-      {data.image && (
+      {data.image && ( 
         <a href={data.link} className="image">
           <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
         </a>
@@ -30,6 +29,8 @@ const Cell = ({ data }) => (
     </article>
   </div>
 );
+
+{/* <a href={data.link}>{data.title}</a> */ } // This is the original code for the title
 
 
 
