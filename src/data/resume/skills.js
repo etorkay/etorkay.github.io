@@ -71,7 +71,7 @@ const skills = [
   },
   {
     title: 'Verilog',
-    competency: 3,
+    competency: 4,
     category: ['Languages', 'HDLs'],
   },
   {
