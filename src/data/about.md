@@ -30,7 +30,7 @@ When I'm not immersed in research or working on a project, you’ll probably fin
 - Running
 - Quite
 - Books
-- Podcasts (Serial Killers, Unsolved Murders, History of the Cold War, Greek mythologies)
+- Podcasts (Serial Killers, Unsolved Murders, History of the Cold War, Greek mythologies, The Jordan B. Peterson Podcast)
 - Food
 - Mobile photography (I plan to explore other forms once I get an actual camera)
 - The concept of time
