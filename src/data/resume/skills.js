@@ -29,7 +29,7 @@ const skills = [
   {
     title: 'Matlab',
     competency: 3,
-    category: ['Languages'],
+    category: ['Languages', 'EDA'],
   },
   {
     title: 'Cmake',
@@ -96,11 +96,7 @@ const skills = [
     competency: 4,
     category: ['Tools', 'EDA'],
   },
-  {
-    title: 'Matlab',
-    competency: 3,
-    category: ['Tools', 'EDA'],
-  },
+
   
   //ISA and Architecture
   {
