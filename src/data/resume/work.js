@@ -31,10 +31,13 @@ const work = [
     position: 'Teaching Assistant',
     url: 'https://compeng.knust.edu.gh/',
     startDate: '2023-10-01',
-    summary: `I tutored students and faciliated their lab sessions in the following courses: Digital Systems Design, Computer Architecture, Linear Electroncs, Operating Systems and VLSI. Typically, the number of students who take VLSI and hardware related courses are less than 20. I was able to spark interest in more 10 students to persue hardware related fields, I helped them understand why they are doing all the courses they do and how they all come together beautifully to create complex systems we see now. In some cases we went back to the first principles. I was able to help students understand the concepts better and also help them with their lab assignments.`,
+    summary: ``,
     highlights: [
-      'Guided final year undergraduate students in the capstone project, ”SwayFit: A corrective sitting posture wearable.”',
+      'I tutored students and faciliated their lab sessions in the following courses: Digital Systems Design I & II, Computer Architecture, Linear Electroncs, Operating Systems and VLSI.',
+      'I sparked the interest of 10 students to persue the field of Computer Design and Architecture ',
+      'Guided final year undergraduate students in their capstone projects, ”SwayFit: A corrective sitting posture wearable.”, "Smart Driver Drowsiness Detection System(SDDDS)", "Design of Smart Water Metering System"',
       'Assisted in the instruction of the undergraduate level Electrical & Computer Engineering courses',
+      'I helped students understand the concepts better and also helped them with their lab assignments.',
       'Instructed and assisted undergraduate students in preparation for resit examinations in Digital Systems Design and Computer Architecture'
     ],
   },

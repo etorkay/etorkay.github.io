@@ -20,6 +20,7 @@ In this section, I layout some random ideas, in any domain the idea may fall in.
 2. Language is an approximated model of one's thougths.
 3. Everyone at the top works hard one way or the other.
 4. Wisdom cannot exist without knowledge
+5. The purpose of life is to seek orderliness
 
 # Beyond the Code
 
@@ -30,10 +31,10 @@ When I'm not immersed in research or working on a project, you’ll probably fin
 - Running
 - Quite
 - Books
-- Podcasts (Serial Killers, Unsolved Murders, History of the Cold War, Greek mythologies, The Jordan B. Peterson Podcast)
 - Food
-- Mobile photography (I plan to explore other forms once I get an actual camera)
 - The concept of time
+- Podcasts (Serial Killers, Unsolved Murders, History of the Cold War, Greek mythologies, The Jordan B. Peterson Podcast)
+- Mobile photography (I plan to explore other forms once I get an actual camera)
 - The idea of skiing and skydiving—both are on my bucket list!
 - My favorite TV show is Sherlock Holmes produced by BBC—a brilliant depiction of deduction and intrigue that never fails to inspire me.
 
