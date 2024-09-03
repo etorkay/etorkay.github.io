@@ -1,7 +1,7 @@
 # Intro
 
-I believe the very things that scare you, that chase you, are the very things you should face heads on. Why keep fleeing when you can rather chase?
-So, I decided the very things I'm scard of are the very things I'll do. If it's speaking to a gathering, or travelling to a new location without any map, I'll do it.
+I believe the very things that scare you, that chase you, are the very things you should face heads-on. Why keep fleeing when you can rather chase?
+So, I decided the very things I'm scared of are the very things I'll do. If it's speaking to a gathering, or travelling to a new location without any map, I'll do it.
 Really, what's there to loose if you take the chances, in fact you were never going to gain if you don't try in the first place. This concept keeps me going, so I try, even if all odds are against me.
 
 # My Journey
@@ -29,7 +29,7 @@ When I'm not immersed in research or working on a project, you’ll probably fin
 # I Like
 
 - Running
-- Quite
+- Quiet
 - Books
 - Food
 - The concept of time
@@ -46,7 +46,7 @@ When I'm not immersed in research or working on a project, you’ll probably fin
 # Finally
 
 I’m currently on a mission to further my research in computer architecture, with a particular focus on designing high-performance, energy-efficient systems. I’m excited about the opportunity to contribute to cutting-edge research and work alongside like-minded individuals in academia or industry. If you're interested in the same fields or just want to chat about technology (or even skydiving!), feel free to reach out.
-Check out some of my peoms below too.
+Check out some of my poems below too.
 
 # My favourite poem
 
