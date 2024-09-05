@@ -35,10 +35,10 @@ const work = [
     highlights: [
       'I tutored students and facilitated their lab sessions in the following courses: Digital Systems Design I & II, Computer Architecture, Linear Electronics, Operating Systems and VLSI.',
       'I sparked the interest of 10 students to pursue the field of Computer Design and Architecture ',
-      'Guided final year undergraduate students in their capstone projects, ”SwayFit: A corrective sitting posture wearable.”, "Smart Driver Drowsiness Detection System(SDDDS)", "Design of Smart Water Metering System"',
+      'Guided final year undergraduate students in their capstone projects, “SwayFit: A corrective sitting posture wearable.”, “Smart Driver Drowsiness Detection System(SDDDS)”, “Design of Smart Water Metering System”',
       'Assisted in the instruction of the undergraduate level Electrical & Computer Engineering courses',
       'I helped students understand the concepts better and also helped them with their lab assignments.',
-      'Instructed and assisted undergraduate students in preparation for resit examinations in Digital Systems Design and Computer Architecture'
+      'Instructed and assisted undergraduate students in preparation for resit examinations in Digital Systems Design and Computer Architecture“”” '
     ],
   },
   {
