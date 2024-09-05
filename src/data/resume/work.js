@@ -49,8 +49,8 @@ const work = [
     endDate: '2023-12-01',
     summary: ``,
     highlights: [
-      'Facilitated an internship program aimed at extending exposure to already‑taught and newer subjects',
-      'Instructed participant groups about HDLs, basic CPU microarchitectures and symmetric Cryptography Ciphers',
+      'Facilitated an internship program aimed at extending exposure to already‑taught and newer subjects in Digital Design and Computer Architecture',
+      'Taught participant groups HDLs (VHDL and Verilog), CPU microarchitectures and symmetric Cryptography Ciphers',
       'Facilitated participant groups to synthesize digital designs on FPGA implementations',
     ],
   },
