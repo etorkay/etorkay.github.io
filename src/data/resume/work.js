@@ -22,7 +22,7 @@ const work = [
       'Implemented digital designs to specification in VHDL and Verilog for FPGA and ASIC implementation.',
       'Conducted research into Residual Number System single cycle Forward and Backward conversion.',
       'Reviewed literature on Network on Chips, interconnects, switches and on‑chip routers.',
-      'Implemented routers in hardware, for swtiching packets in SoCs',
+      'Implemented routers in hardware, for switching packets in SoCs',
       'Reviewed literature on branch prediction: direction and target address prediction.'
     ],
   },
@@ -33,8 +33,8 @@ const work = [
     startDate: '2023-10-01',
     summary: ``,
     highlights: [
-      'I tutored students and faciliated their lab sessions in the following courses: Digital Systems Design I & II, Computer Architecture, Linear Electroncs, Operating Systems and VLSI.',
-      'I sparked the interest of 10 students to persue the field of Computer Design and Architecture ',
+      'I tutored students and facilitated their lab sessions in the following courses: Digital Systems Design I & II, Computer Architecture, Linear Electronics, Operating Systems and VLSI.',
+      'I sparked the interest of 10 students to pursue the field of Computer Design and Architecture ',
       'Guided final year undergraduate students in their capstone projects, ”SwayFit: A corrective sitting posture wearable.”, "Smart Driver Drowsiness Detection System(SDDDS)", "Design of Smart Water Metering System"',
       'Assisted in the instruction of the undergraduate level Electrical & Computer Engineering courses',
       'I helped students understand the concepts better and also helped them with their lab assignments.',

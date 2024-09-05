@@ -17,7 +17,7 @@ I believe that technology holds the key to solving many of the world's challenge
 In this section, I layout some random ideas, in any domain the idea may fall in. The ideas will mostly be philosophical, bear with me.
 
 1. I believe things work out in the end.
-2. Language is an approximated model of one's thougths.
+2. Language is an approximated model of one's thoughts.
 3. Everyone at the top works hard one way or the other.
 4. Wisdom cannot exist without knowledge
 5. The purpose of life is to seek orderliness
@@ -104,7 +104,7 @@ our presence automatically liberates others."</center>
     Refreshed they recover, 
     To keep, lest perpetual 
     Draw out the power that keeps
-    The last touch ablze
+    The last touch ablaze
 
 <h3 align='center'>In Abundance</h3>
 

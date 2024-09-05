@@ -95,7 +95,7 @@ const data = [
     start_date: '2022-05-20',
     end_date: '2022-09-20',
     desc:
-      'Led a team of developers to build an Androidapp using Flutter Framework and NodeJs\n' +
+      'Led a team of developers to build an Android app using Flutter Framework and NodeJs\n' +
       'The app was for reporting issue tickets to relevant authorities and bodies to resolve the issues',
   },
   {
