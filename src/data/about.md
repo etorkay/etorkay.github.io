@@ -33,7 +33,7 @@ When I'm not immersed in research or working on a project, you’ll probably fin
 - Books
 - Food
 - The concept of time
-- Podcasts (Serial Killers, Unsolved Murders, History of the Cold War, Greek mythologies, The Jordan B. Peterson Podcast)
+- Podcasts (Serial Killers, Unsolved Murders, History of the Cold War, Greek mythologies, The Jordan B. Peterson Podcast, Embedded FM)
 - Mobile photography (I plan to explore other forms once I get an actual camera)
 - The idea of skiing and skydiving—both are on my bucket list!
 - My favorite TV show is Sherlock Holmes produced by BBC—a brilliant depiction of deduction and intrigue that never fails to inspire me.
