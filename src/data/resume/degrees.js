@@ -6,12 +6,12 @@ const degrees = [
     year: 2023,
   },
 
-  // {
-  //   school: 'Sonrise Christian High School',
-  //   degree: 'High School Diploma (WASSCE)',
-  //   link: 'https://www.sonrise.edu.gh/',
-  //   year: 2018,
-  // }
+  {
+    school: 'Sonrise Christian High School',
+    degree: 'High School Diploma (WASSCE)',
+    link: 'https://www.sonrise.edu.gh/',
+    year: 2018,
+  }
 ];
 
 export default degrees;
