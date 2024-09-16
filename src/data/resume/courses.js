@@ -24,7 +24,12 @@ const courses = [
     university: 'KNUST',
   },
 
-
+  {
+    title: 'Numerical Analysis',
+    number: 'MATH 351',
+    link: 'https://compeng.knust.edu.gh/undergraduate/bsc-computer-engineering',
+    university: 'KNUST'
+  },
   {
     title: 'Linear Electronic Circuits',
     number: 'COE 371',
