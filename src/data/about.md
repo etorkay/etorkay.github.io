@@ -46,7 +46,7 @@ When I'm not immersed in research or working on a project, you’ll probably fin
 # Finally
 
 I’m currently on a mission to further my research in computer architecture, with a particular focus on designing high-performance, energy-efficient systems. I’m excited about the opportunity to contribute to cutting-edge research and work alongside like-minded individuals in academia or industry. If you're interested in the same fields or just want to chat about technology (or even skydiving!), feel free to reach out.
-Check out some of my poems below too.
+Check out some of my poems below too!
 
 # My favourite poem
 

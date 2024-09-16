@@ -22,11 +22,11 @@ const data = [
   },
   {
     label: 'Number of spoons',
-    value: '0',
+    value: '2070',
   },
   {
     label: 'Number of linter warnings',
-    value: '0', // enforced via github workflow
+    value: '2070', // enforced via github workflow
   },
   {
     label: 'Open github issues',
@@ -44,7 +44,7 @@ const data = [
     /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
     xargs -I file cat file | wc -l */
     label: 'Lines of Javascript powering this website',
-    value: '2150',
+    value: '2070',
     link: 'https://github.com/etorkay/etorkay.github.io/graphs/contributors',
   },
 ];
