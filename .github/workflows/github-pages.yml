@@ -1,51 +1,51 @@
 # Simple workflow for deploying static content to GitHub Pages
+
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  # Single deploy since we're just deploying
   deploy:
+    runs-on: ubuntu-20.04
     environment:
       name: github-pages
       url: https://etorkay.github.io/
-    runs-on: ubuntu-20.04
     timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          #node-version-file: ".nvmrc"
           cache: "npm"
+
       - name: Install
         run: npm ci
-      - name: Set Puppeteer CI environment
-        run: echo "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true" >> $GITHUB_ENV
+
+      # Install Chrome so Puppeteer (react-snap) can use it
+      - name: Install Chrome for Puppeteer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+        continue-on-error: true
+
       - name: Build and Render
         shell: bash
         run: |
-          # NOTE: Rendering can be flaky and react-snap is no
-          # longer maintained, so retry until I convert to next.
           function retry {
             local n=1
             local max=5
@@ -66,14 +66,17 @@ jobs:
           retry npm run predeploy
         env:
           NODE_ENV: production
-          # Remove this line if you would like to skip using google analytics
-          REACT_APP_GA_TRACKING_ID: G-7HYD22TXRP
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: "build"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
