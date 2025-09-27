@@ -91,14 +91,19 @@ const Navigation = () => {
       <Hamburger />
 
       {/* Theme toggle switch */}
-      <div className="theme-switch" style={{ marginLeft: '0.8rem' }}>
+      <div className="theme-switch">
         <input
           type="checkbox"
           id="theme-toggle"
           checked={theme === 'dark'}
           onChange={toggleTheme}
         />
-        <label htmlFor="theme-toggle" />
+        <label htmlFor="theme-toggle" className="switch">
+          <span className="knob">
+            <span className="icon sun">☀️</span>
+            <span className="icon moon">🌙</span>
+          </span>
+        </label>
       </div>
     </header>
   );
