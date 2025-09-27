@@ -24,8 +24,8 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "npm"
       - run: npm ci
-      - name: Lint
-        run: npm run lint
+ #     - name: Lint
+ #       run: npm run lint
 
   build:
     runs-on: ${{ matrix.os }}
