@@ -39,6 +39,8 @@ jobs:
           cache: "npm"
       - name: Install
         run: npm ci
+      - name: Set Puppeteer CI environment
+        run: echo "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true" >> $GITHUB_ENV
       - name: Build and Render
         shell: bash
         run: |
