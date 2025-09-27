@@ -25,7 +25,7 @@ body {
 }
 
 body {
-  background: _palette(bg-alt);
+  background: var(--bg-alt);
 
   // Prevents animation/transition "flicker" on page load.
   // Automatically added/removed by js/main.js.

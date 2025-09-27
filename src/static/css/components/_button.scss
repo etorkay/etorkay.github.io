@@ -22,8 +22,8 @@ button,
   );
   background-color: transparent;
   border: 0;
-  box-shadow: inset 0 0 0 1px _palette(border);
-  color: _palette(fg-bold) !important;
+  box-shadow: inset 0 0 0 1px var(--border);
+  color: var(--fg-bold) !important;
   cursor: pointer;
   display: inline-block;
   font-family: _font(family-heading);
@@ -39,17 +39,17 @@ button,
   white-space: nowrap;
 
   &:hover {
-    box-shadow: inset 0 0 0 1px _palette(accent);
-    color: _palette(accent) !important;
+    box-shadow: inset 0 0 0 1px var(--accent);
+    color: var(--accent) !important;
 
     &:active {
-      background-color: transparentize(_palette(accent), 0.95);
+      background-color: var(--accent-transparent);
     }
   }
 
   &:before,
   &:after {
-    color: _palette(fg-light);
+    color: var(--fg-light);
     position: relative;
   }
 
@@ -81,10 +81,10 @@ button,
   &.disabled,
   &:disabled {
     @include vendor("pointer-events", "none");
-    color: _palette(border) !important;
+    color: var(--border) !important;
 
     &:before {
-      color: _palette(border) !important;
+      color: var(--border) !important;
     }
   }
 }

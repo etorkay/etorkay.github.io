@@ -17,12 +17,12 @@ table {
 
   tbody {
     tr {
-      border: solid 1px _palette(border);
+      border: solid 1px var(--border);
       border-left: 0;
       border-right: 0;
 
       &:nth-child(2n + 1) {
-        background-color: _palette(border-bg);
+        background-color: var(--border-bg);
       }
     }
   }
@@ -32,7 +32,7 @@ table {
   }
 
   th {
-    color: _palette(fg-bold);
+    color: var(--fg-bold);
     font-size: 0.9em;
     font-weight: _font(weight-bold);
     padding: 0 0.75em 0.75em 0.75em;
@@ -40,11 +40,11 @@ table {
   }
 
   thead {
-    border-bottom: solid 2px _palette(border);
+    border-bottom: solid 2px var(--border);
   }
 
   tfoot {
-    border-top: solid 2px _palette(border);
+    border-top: solid 2px var(--border);
   }
 
   &.alt {
@@ -53,7 +53,7 @@ table {
     tbody {
       tr {
         td {
-          border: solid 1px _palette(border);
+          border: solid 1px var(--border);
           border-left-width: 0;
           border-top-width: 0;
 

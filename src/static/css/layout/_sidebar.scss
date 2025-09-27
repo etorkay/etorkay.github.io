@@ -12,7 +12,7 @@
   width: 22em;
 
   > * {
-    border-top: solid 1px _palette(border);
+    border-top: solid 1px var(--border);
     margin: _size(section-spacing) 0 0 0;
     padding: _size(section-spacing) 0 0 0;
   }
@@ -24,7 +24,7 @@
   }
 
   @include breakpoint(large) {
-    border-top: solid 1px _palette(border);
+    border-top: solid 1px var(--border);
     margin: _size(section-spacing) 0 0 0;
     min-width: 0;
     padding: _size(section-spacing) 0 0 0;

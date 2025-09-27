@@ -8,11 +8,11 @@
 
 #footer {
   .icons {
-    color: _palette(fg-light);
+    color: var(--fg-light);
   }
 
   .copyright {
-    color: _palette(fg-light);
+    color: var(--fg-light);
     font-family: _font(family-heading);
     font-size: 0.5em;
     font-weight: _font(weight-heading);

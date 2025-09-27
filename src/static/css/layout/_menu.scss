@@ -13,8 +13,8 @@
     ("transform #{_duration(menu)} ease", "visibility #{_duration(menu)}")
   );
   -webkit-overflow-scrolling: touch;
-  background: _palette(bg);
-  border-left: solid 1px _palette(border);
+  background: var(--bg);
+  border-left: solid 1px var(--border);
   box-shadow: none;
   height: 100%;
   max-width: 80%;
@@ -27,7 +27,7 @@
   z-index: _misc(z-index-base) + 2;
 
   > * {
-    border-top: solid 1px _palette(border);
+    border-top: solid 1px var(--border);
     padding: _size(section-spacing);
 
     > :last-child {
@@ -45,7 +45,7 @@
 
     > li {
       border: 0;
-      border-top: dotted 1px _palette(border);
+      border-top: dotted 1px var(--border);
       margin: 1.5em 0 0 0;
       padding: 1.5em 0 0 0;
 
@@ -71,7 +71,7 @@
 
         &:hover {
           h3 {
-            color: _palette(accent);
+            color: var(--accent);
           }
         }
       }

@@ -43,7 +43,22 @@ $font: (
 );
 
 // Palette.
-$palette: (
+//TODO: remove this!
+// $palette: (
+//   bg: #ffffff,
+//   bg-alt: #f4f4f4,
+//   fg: #646464,
+//   fg-bold: #3c3b3b,
+//   fg-light: #aaaaaa,
+//   border: rgba(160, 160, 160, 0.3),
+//   border-bg: rgba(160, 160, 160, 0.075),
+//   border-alt: rgba(160, 160, 160, 0.65),
+//   accent: #2e59ba,
+// );
+
+
+// Palette.
+$palette-light: (
   bg: #ffffff,
   bg-alt: #f4f4f4,
   fg: #646464,
@@ -54,3 +69,36 @@ $palette: (
   border-alt: rgba(160, 160, 160, 0.65),
   accent: #2e59ba,
 );
+
+$palette-dark: (
+  bg: #121212,
+  bg-alt: #1e1e1e,
+  fg: #e0e0e0,
+  fg-bold: #ffffff,
+  fg-light: #aaaaaa,
+  border: rgba(255, 255, 255, 0.2),
+  border-bg: rgba(255, 255, 255, 0.05),
+  border-alt: rgba(255, 255, 255, 0.4),
+  accent: #4f46e5, // Purple accent for dark
+);
+
+$palette: $palette-light;
+
+
+:root[data-theme="light"] {
+  @each $key, $val in $palette-light {
+    --#{$key}: #{$val};
+  }
+
+  // Derived colors
+  --accent-transparent: #{transparentize(map-get($palette-light, accent), 0.95)};
+}
+
+:root[data-theme="dark"] {
+  @each $key, $val in $palette-dark {
+    --#{$key}: #{$val};
+  }
+
+  // Derived colors
+  --accent-transparent: #{transparentize(map-get($palette-dark, accent), 0.95)};
+}
