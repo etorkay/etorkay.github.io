@@ -67,7 +67,7 @@ jobs:
           retry npm run predeploy
         env:
           NODE_ENV: production
-          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          # GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
 
       - name: Debug env
