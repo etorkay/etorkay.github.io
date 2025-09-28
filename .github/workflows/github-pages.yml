@@ -92,7 +92,9 @@ name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: 
+      - main
+    
   workflow_dispatch:
 
 permissions:
@@ -102,7 +104,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -129,7 +131,7 @@ jobs:
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: "./build"
 
   deploy:
     runs-on: ubuntu-latest
