@@ -9,6 +9,23 @@ import ReactDOM from 'react-dom/client';
 import { act } from 'react';
 import App from '../App';
 
+// 👇 Mock window.matchMedia before tests run
+beforeAll(() => {
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    value: jest.fn().mockImplementation(query => ({
+      matches: false, // default: no dark mode
+      media: query,
+      onchange: null,
+      addListener: jest.fn(), // deprecated
+      removeListener: jest.fn(), // deprecated
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      dispatchEvent: jest.fn(),
+    })),
+  });
+});
+
 describe('renders the app', () => {
   // mocks the fetch API used on the stats page and the about page.
   const jsonMock = jest.fn(() => Promise.resolve({}));
@@ -26,7 +43,7 @@ describe('renders the app', () => {
     container = document.createElement('div');
     document.body.appendChild(container);
     await act(async () => {
-      await ReactDOM.createRoot(container).render(<App />);
+      ReactDOM.createRoot(container).render(<App />);
     });
   });
 
@@ -51,7 +68,7 @@ describe('renders the app', () => {
     );
     expect(aboutLink).toBeInTheDocument();
     await act(async () => {
-      await aboutLink.click();
+      aboutLink.click();
     });
     expect(document.title).toContain('About |');
     expect(window.location.pathname).toBe('/about');
@@ -68,7 +85,7 @@ describe('renders the app', () => {
     );
     expect(contactLink).toBeInTheDocument();
     await act(async () => {
-      await contactLink.click();
+      contactLink.click();
     });
     expect(document.title).toContain('Resume |');
     expect(window.location.pathname).toBe('/resume');
@@ -81,7 +98,7 @@ describe('renders the app', () => {
     );
     expect(contactLink).toBeInTheDocument();
     await act(async () => {
-      await contactLink.click();
+      contactLink.click();
     });
     expect(document.title).toContain('Projects |');
     expect(window.location.pathname).toBe('/projects');
@@ -94,7 +111,7 @@ describe('renders the app', () => {
     );
     expect(contactLink).toBeInTheDocument();
     await act(async () => {
-      await contactLink.click();
+      contactLink.click();
     });
     expect(document.title).toContain('Stats |');
     expect(window.location.pathname).toBe('/stats');
@@ -109,7 +126,7 @@ describe('renders the app', () => {
     );
     expect(contactLink).toBeInTheDocument();
     await act(async () => {
-      await contactLink.click();
+      contactLink.click();
     });
     expect(document.title).toContain('Contact |');
     expect(window.location.pathname).toBe('/contact');

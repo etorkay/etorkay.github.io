@@ -67,7 +67,7 @@ jobs:
           retry npm run predeploy
         env:
           NODE_ENV: production
-          #GA_MEASUREMENT_ID: G-7HYD22TXRP
+          #GA_MEASUREMENT_ID:
           REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.REACT_APP_GA_MEASUREMENT_ID }}
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
 
