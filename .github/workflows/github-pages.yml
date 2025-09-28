@@ -41,6 +41,9 @@ jobs:
         id: setup-chrome
         uses: browser-actions/setup-chrome@v1
 
+      - name: Set Puppeteer args
+        run: echo "PUPPETEER_ARGS=--no-sandbox --disable-setuid-sandbox" >> $GITHUB_ENV
+
       - name: Build and Render
         shell: bash
         run: |
