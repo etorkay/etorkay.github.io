@@ -1,26 +1,29 @@
+
 import React, { useEffect, useState } from 'react';
 
 const ThemeToggle = () => {
     // Track theme state
-    const [theme, setTheme] = useState('light');
-
-    // On mount, load theme from localStorage or system preference
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setTheme(savedTheme);
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('dark');
-            document.documentElement.setAttribute('data-theme', 'dark');
+    const [theme, setTheme] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) return savedTheme;
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
         }
-    }, []);
+        return 'light';
+    });
+
+    // On mount, ensure attributes are consistent (though index.html handles this too)
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.style.backgroundColor = theme === 'dark' ? '#1e1e1e' : '#f4f4f4';
+    }, [theme]);
 
     // Toggle theme handler
     const toggleTheme = () => {
         const newTheme = theme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
         document.documentElement.setAttribute('data-theme', newTheme);
+        document.documentElement.style.backgroundColor = newTheme === 'dark' ? '#1e1e1e' : '#f4f4f4';
         localStorage.setItem('theme', newTheme);
     };
 
