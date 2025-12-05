@@ -12,7 +12,7 @@
   },
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
-    "build": "rimraf ./build && react-scripts build",
+    "build": "rimraf ./build && react-scripts build && cp build/index.html build/404.html",
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build && react-snap --puppeteer-args=--no-sandbox,--disable-setuid-sandbox",
     "start": "react-scripts start",
