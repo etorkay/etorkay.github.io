@@ -21,7 +21,7 @@ const Stats = lazy(() => import('./pages/Stats'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
-    <Suspense fallback={<Main />}>
+    <Suspense fallback={<Main fullPage><div style={{ padding: '3em', textAlign: 'center' }}>Loading...</div></Main>}>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
