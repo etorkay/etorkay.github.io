@@ -6,6 +6,24 @@ Gemfile.lock
 *.code-workspace
 node_modules/
 nginx.conf
-.dockerignore
-Dockerfile
-docker-compose.yml
+
+# Build artifacts
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS internals
+.DS_Store
+
+# Debugging outputs
+*_output.txt
+*_logs.txt

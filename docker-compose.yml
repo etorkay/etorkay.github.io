@@ -1,0 +1,14 @@
+services:
+  react-app:
+    image: node:20-alpine             # use Node directly, no need to rebuild
+    container_name: react-app-dev
+    working_dir: /app
+    volumes:
+      - .:/app                        # mount project files
+      - /app/node_modules             # keep node_modules in container
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true      # ensures hot-reload works inside Docker
+      - HOST=0.0.0.0                  # allows access from LAN
+    command: sh -c "npm install && npm start"
