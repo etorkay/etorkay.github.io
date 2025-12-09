@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
@@ -8,7 +9,7 @@ import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
 
 const Main = (props) => (
-  <HelmetProvider>
+  <>
     <Analytics />
     <ScrollToTop />
     <Helmet
@@ -22,9 +23,22 @@ const Main = (props) => (
     <div id="wrapper">
       <Navigation />
       <div id="main">{props.children}</div>
-      {props.fullPage ? null : <SideBar />}
+      <AnimatePresence>
+        {!props.fullPage && (
+          <motion.div
+            key="sidebar"
+            initial={{ width: 0, opacity: 0, marginRight: 0, minWidth: 0 }}
+            animate={{ width: '22em', opacity: 1, marginRight: '3em', minWidth: '22em' }}
+            exit={{ width: 0, opacity: 0, marginRight: 0, minWidth: 0 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            style={{ overflow: 'hidden', display: 'flex' }} // ensure content layout
+          >
+            <SideBar style={{ marginRight: 0 }} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
-  </HelmetProvider>
+  </>
 );
 
 Main.propTypes = {

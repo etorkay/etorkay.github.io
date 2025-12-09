@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
-import Main from '../layouts/Main';
+import { Helmet } from 'react-helmet-async';
 import Comments from '../components/Blog/Comments';
 import posts from '../data/blog/posts';
 
@@ -27,11 +27,10 @@ const BlogPost = () => {
     }
 
     return (
-        <Main
-            title={post.title}
-            description={post.desc}
-            fullPage
-        >
+        <>
+            <Helmet title={post.title}>
+                <meta name="description" content={post.desc} />
+            </Helmet>
             <article className="post markdown" id="blog-post">
                 <header>
                     <div className="title">
@@ -48,7 +47,7 @@ const BlogPost = () => {
                 <div className="horizontal-rule" />
                 <Comments />
             </article>
-        </Main>
+        </>
     );
 };
 

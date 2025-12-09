@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
-
-import Main from '../layouts/Main';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   const [markdown, setMarkdown] = useState('');
@@ -21,19 +20,20 @@ const About = () => {
     .filter((s) => s.length).length;
 
   return (
-    <Main title="About" description="Learn about Nero Novor">
-      <article className="post markdown" id="about">
-        <header>
-          <div className="title">
-            <h2>
-              <Link to="/about">About Me</Link>
-            </h2>
-            <p>(in about {count} words)</p>
-          </div>
-        </header>
-        <Markdown>{markdown}</Markdown>
-      </article>
-    </Main>
+    <article className="post markdown" id="about">
+      <Helmet title="About">
+        <meta name="description" content="Learn about Nero Novor" />
+      </Helmet>
+      <header>
+        <div className="title">
+          <h2>
+            <Link to="/about">About Me</Link>
+          </h2>
+          <p>(in about {count} words)</p>
+        </div>
+      </header>
+      <Markdown>{markdown}</Markdown>
+    </article>
   );
 };
 

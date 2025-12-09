@@ -5,8 +5,8 @@ import ContactIcons from '../Contact/ContactIcons';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
-const SideBar = () => (
-  <section id="sidebar">
+const SideBar = (props) => (
+  <section id="sidebar" {...props}>
     <section id="intro">
       <Link to="/" className="logo">
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
@@ -25,7 +25,7 @@ const SideBar = () => (
         Hello there, Nero here. I am a{' '}
         <a href="https://www.knust.edu.gh/">KNUST</a> graduate, and currently a Teaching and Research Assistant under{' '}
         <a href="https://webapps.knust.edu.gh/staff/dirsearch/profile/areas-of-interest/3852d7e475d8.html">Prof. K. O. Boateng</a> , at the department of{' '}
-        <a href="https://compeng.knust.edu.gh/undergraduate/bsc-computer-engineering">Computer Engineering</a>{' '}<a href="https://www.knust.edu.gh/">KNUST</a>. 
+        <a href="https://compeng.knust.edu.gh/undergraduate/bsc-computer-engineering">Computer Engineering</a>{' '}<a href="https://www.knust.edu.gh/">KNUST</a>.
         I apreciate the fundamentals, the genesis, the building blocks of things. Specifically, I am interested in the field of{' '} <a href="https://en.wikipedia.org/wiki/Computer_architecture">Computer Architecture</a>, a domain which nicely blends simplicity into complexities! I get to express{' '}<a href="https://en.wikipedia.org/wiki/STEAM_education">STEAM</a>!
       </p>
       <ul className="actions">

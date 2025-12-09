@@ -1,27 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import Main from '../layouts/Main';
+import { Helmet } from 'react-helmet-async';
 
 import Cell from '../components/Projects/Cell';
 import data from '../data/projects';
 
 const Projects = () => (
-  <Main title="Projects" description="Learn about Nero's projects.">
-    <article className="post" id="projects">
-      <header>
-        <div className="title">
-          <h2>
-            <Link to="/projects">Projects</Link>
-          </h2>
-          <p>A selection of projects I&apos;ve worked on</p>
-        </div>
-      </header>
-      {data.map((project) => (
-        <Cell data={project} key={project.title} />
-      ))}
-    </article>
-  </Main>
+  <article className="post" id="projects">
+    <Helmet title="Projects">
+      <meta name="description" content="Learn about Nero's projects." />
+    </Helmet>
+    <header>
+      <div className="title">
+        <h2>
+          <Link to="/projects">Projects</Link>
+        </h2>
+        <p>A selection of projects I&apos;ve worked on</p>
+      </div>
+    </header>
+    {data.map((project) => (
+      <Cell data={project} key={project.title} />
+    ))}
+  </article>
 );
 
 export default Projects;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import Main from '../layouts/Main';
+import { Helmet } from 'react-helmet-async';
 
 import Education from '../components/Resume/Education';
 import Experience from '../components/Resume/Experience';
@@ -24,30 +23,28 @@ const sections = {
 };
 
 const Resume = () => (
-  <Main
-    title="Resume"
-    description="Nero's Resume. Computer Architect and Philosopher who creates truce between electrons artistically."
-  >
-    <article className="post" id="resume">
-      <header>
-        <div className="title">
-          <h2>
-            <Link to="resume">Resume</Link>
-          </h2>
-          <div className="link-container">
-            {Object.keys(sections).map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>
-            ))}
-          </div>
+  <article className="post" id="resume">
+    <Helmet title="Resume">
+      <meta name="description" content="Nero's Resume. Computer Architect and Philosopher who creates truce between electrons artistically." />
+    </Helmet>
+    <header>
+      <div className="title">
+        <h2>
+          <Link to="resume">Resume</Link>
+        </h2>
+        <div className="link-container">
+          {Object.keys(sections).map((sec) => (
+            <h4 key={sec}>
+              <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+            </h4>
+          ))}
         </div>
-      </header>
-      {Object.entries(sections).map(([name, Section]) => (
-        <Section key={name} />
-      ))}
-    </article>
-  </Main>
+      </div>
+    </header>
+    {Object.entries(sections).map(([name, Section]) => (
+      <Section key={name} />
+    ))}
+  </article>
 );
 
 export default Resume;
